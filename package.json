@@ -1,14 +1,16 @@
 {
   "name": "vue-echarts-simple",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.1.5",
+  "main": "lib/vueEchartsSimple.common.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "lib": "vue-cli-service build --target lib --name vueEchartsSimple --dest lib src/index.js"
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "echarts": "^5.1.2",
     "vue": "^2.6.11"
   },
   "devDependencies": {
